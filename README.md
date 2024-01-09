@@ -1,2 +1,2 @@
 # AOF
-A website for financial literacy and how to invest tips. Allowing one to manage money better and create a revenue 
+A reactive website template for financial literacy and how to invest. Allowing one to manage money better and create a revenue. 
