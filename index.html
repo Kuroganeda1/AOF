@@ -39,43 +39,26 @@
         <li class="navbarItems">
           <a href="tips_on_investing.html" class="navbarLinks"> Tips on investing</a>
         </li>
+        <li>
+        <a href="budget.html" class="navbarLinks"> Budgeting</a>
+      </li>
         <li class="navbarBtn">
-          <a href="/" class="button">Sign up</a>
+          <a href="/" class="button"id="signup-btn">Sign up</a>
         </li>
         <li class="navbarBtn">
-          <a href="/" class="button">Login</a>
+          <a href="" class="button" id="loginButton">Login</a>
         </li>
       </ul>
     </div>
   </nav>
 
-        <!-- Login Page
+        <!-- Login Page -->
 
-        <div class="login-wrapper">
-          <div class="form-box-login">
-            <h2>Login</h2>
-            <form action="#">
-              <div class="input-box">
-                <span class="login-icon"> <i class="fa fa-envelope"></i>  </span>
-                <input type="email" required>
-                <label> Email: </label>
-              </div>
-              <div class="input-box">
-                <span class="login-icon"> <i class="fa fa-key"></i> </span>
-                <input type="password" required>
-                <label> Password: </label>
-              </div>
-            <div class="remember-forgot">
-              <label> <input type="checkbox"> Remember Me</label>
-            <a href="/">Forgot Password?</a>
-            </div>
-            <button type="submit" class="login-btn"> Login </button>
-            <div class="login-register">
-              <p> Don't Have An Accouunt? <a href="/" class="register-link">Register</a></p>
-            </div>
-            </form>
+  
+</div>
+
           </div>
-        </div> -->
+        </div>
 
     <!-- Hero section -->
   <div class="main">
@@ -96,6 +79,39 @@
       </div>
     </div>
   </div>
+
+      <!-- Login Popup -->
+<div id="loginPopup" class="popup">
+  <div id="loginForm" class="form-container">
+    <h2>Login</h2>
+    <form id="login">
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" name="email" required />
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" name="password" required />
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#" onclick="toggleForms()">Sign up</a></p>
+  </div>
+</div>
+
+<!-- Signup Popup -->
+<div id="signupPopup" class="popup" style="display: none;">
+  <div id="signupForm" class="form-container">
+    <h2>Sign Up</h2>
+    <form id="signup">
+      <label for="signupEmail">Email:</label>
+      <input type="email" id="signupEmail" name="email" required />
+      <label for="signupPassword">Password:</label>
+      <input type="password" id="signupPassword" name="password" required />
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required />
+      <button type="submit" class="submit-btn">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="#" onclick="toggleForms()">Login</a></p>
+    
+  </div>
+</div>
 
   <!-- Services Section -->
   <div class="services">
@@ -134,7 +150,7 @@
           <div class="footer-link-items">
             <h2>Videos</h2>
             <a href="/">Financial Inquries</a>
-            <a href="/">Budgeting Videos</a>
+            <a href="budget.html">Budgeting Videos</a>
             <a href="/">The 60/20/20 Rule</a>
           </div>
           <div class="footer-link-items">
@@ -168,6 +184,23 @@
           </a>
         </div>
       </div>
+<!-- Firebase App (the core Firebase SDK) -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<!-- Firebase Authentication -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+
+<script> const firebaseConfig = {
+  apiKey: "AIzaSyBv36CGY0yqCWurk8LHmCLfJ-I7Ye0GJBk",
+  authDomain: "aof-project-dc827.firebaseapp.com",
+  projectId: "aof-project-dc827",
+  storageBucket: "aof-project-dc827.firebasestorage.app",
+  messagingSenderId: "47120938811",
+  appId: "1:47120938811:web:d56b5f0dffe8a58a0b691e",
+  measurementId: "G-0F4MXBJFL7"
+};
+const app = initializeApp(firebaseConfig);
+const auth = firebase.auth();
+</script>
 
   <script src="script.js"></script>
   </body>
