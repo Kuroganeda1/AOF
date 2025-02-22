@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <!Doctype html>
 <html lang="en">
 
@@ -42,18 +40,21 @@
         <li class="navbarItems">
           <a href="tips_on_investing.html" class="navbarLinks"> Tips on investing</a>
         </li>
+        <li>
+        <a href="budget.html" class="navbarLinks"> Budgeting</a>
+      </li>
         <li class="navbarBtn">
-          <a href="/" class="button">Sign up</a>
+          <a href="/" class="button"id="signup-btn">Sign up</a>
         </li>
         <li class="navbarBtn">
-          <a href="/" class="button">Login</a>
-          <li>
-            <a href="budget.html" class="navbarLinks"> Budgeting</a>
-          </li>
+          <a href="" class="button" id="loginButton">Login</a>
         </li>
       </ul>
+
     </div>
-  </nav>
+</nav>
+
+
 
     <!-- Hero section -->
   <div class="main">
@@ -75,6 +76,40 @@
     </div>
   </div>
 
+    <!-- Login Popup -->
+<div id="loginPopup" class="popup">
+  <div id="loginForm" class="form-container">
+    <h2>Login</h2>
+    <form id="login">
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" name="email" required />
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" name="password" required />
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#" onclick="toggleForms()">Sign up</a></p>
+  </div>
+</div>
+
+<!-- Signup Popup -->
+<div id="signupPopup" class="popup" style="display: none;">
+  <div id="signupForm" class="form-container">
+    <h2>Sign Up</h2>
+    <form id="signup">
+      <label for="signupEmail">Email:</label>
+      <input type="email" id="signupEmail" name="email" required />
+      <label for="signupPassword">Password:</label>
+      <input type="password" id="signupPassword" name="password" required />
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required />
+      <button type="submit" class="submit-btn">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="#" onclick="toggleForms()">Login</a></p>
+    
+  </div>
+</div>
+
+
   <!-- Services Section -->
   <div class="services">
     <h1>Let's Understand Your Financial Needs</h1>
@@ -94,4 +129,3 @@
   <script src="script.js"></script>
   </body>
   </html>
->>>>>>> 3ed6897 (Updated project with new changes)

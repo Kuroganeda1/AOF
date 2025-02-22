@@ -29,93 +29,31 @@
 
         </div>
 
+    
         <ul class="navbarMenu">
-            <li class="navbarItems">
+        <li class="navbarItems">
             <a href="index.html" class="navbarLinks"> Home </a>
-            </li>
-            <li class="navbarItems">
-            <a href="finance.html" class="navbarLinks"> Fiancial Literacy</a>
-            </li>
-            <li class="navbarItems">
-            <a href="tips_on_investing.html" class="navbarLinks"> Tips on investing</a>
-            </li>
-            <a href="budget.html" class="navbarLinks"> Budgeting</a>
-            <li>
-                <a href="budget.html" class="navbarLinks"> Budgeting</a>
-            </li>
         </li>
-
-            <li class="navbarBtn">
+        <li class="navbarItems">
+            <a href="finance.html" class="navbarLinks"> Fiancial Literacy</a>
+        </li>
+        <li class="navbarItems">
+            <a href="tips_on_investing.html" class="navbarLinks"> Tips on investing</a>
+            <li>
+            <a href="budget.html" class="navbarLinks"> Budgeting</a>
+            </li>
+        <li class="navbarBtn">
             <a href="/" class="button">Sign up</a>
-            </li>
-            <li class="navbarBtn">
+        </li>
+        <li class="navbarBtn">
             <a href="/" class="button">Login</a>
-            </li>
+        </li>
         </ul>
-        </div>
+    </div>
     </nav>
 
-            <!-- Login Page -->
 
-            <div class="signUp-wrapper">
-            <div class="form-box-sign-up">
-                <h2>Login</h2>
-                <form id="signUp-form">
-
-                <div class="input-box">
-                    <span class="signUp-icon"> <i class="fa fa-user" aria-hidden="true"></i> </span>
-                    <input type="name" required>
-                    <label> First Name: </label>
-                </div>
-
-                <div class="input-box">
-                    <span class="login-icon"> <i class="fa fa-envelope"></i>  </span>
-                    <input type="email" required>
-                    <label> Email: </label>
-                </div>
-                <div class="input-box">
-                    <span class="login-icon"> <i class="fa fa-key"></i> </span>
-                    <input type="password" required>
-                    <label> Password: </label>
-                </div>
-                <div class="remember-forgot">
-                <label> <input type="checkbox"> Remember Me</label>
-                <a href="/">Forgot Password?</a>
-                </div>
-                <button type="submit" class="login-btn"> Login </button>
-                <div class="login-register">
-                <p> Don't Have An Accouunt? <a href="/" class="register-link">Register</a></p>
-                </div>
-                </form>
-            </div>
-            </div>
-
-
-            <div class="login-wrapper">
-            <div class="form-box-login">
-                <h2>Login</h2>
-                <form action="#">
-                <div class="input-box">
-                    <span class="login-icon"> <i class="fa fa-envelope"></i>  </span>
-                    <input type="email" required>
-                    <label> Email: </label>
-                </div>
-                <div class="input-box">
-                    <span class="login-icon"> <i class="fa fa-key"></i> </span>
-                    <input type="password" required>
-                    <label> Password: </label>
-                </div>
-                <div class="remember-forgot">
-                <label> <input type="checkbox"> Remember Me</label>
-                <a href="/">Forgot Password?</a>
-                </div>
-                <button type="submit" class="login-btn"> Login </button>
-                <div class="login-register">
-                <p> Don't Have An Accouunt? <a href="/" class="register-link">Register</a></p>
-                </div>
-                </form>
-            </div>
-            </div>
+            
 
         <!-- Hero section -->
     <div class="main">
@@ -136,6 +74,39 @@
         </div>
         </div>
     </div>
+
+        <!-- Login Popup -->
+<div id="loginPopup" class="popup">
+    <div id="loginForm" class="form-container">
+        <h2>Login</h2>
+        <form id="login">
+        <label for="loginEmail">Email:</label>
+        <input type="email" id="loginEmail" name="email" required />
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="password" required />
+        <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" onclick="toggleForms()">Sign up</a></p>
+    </div>
+</div>
+
+    <!-- Signup Popup -->
+    <div id="signupPopup" class="popup" style="display: none;">
+    <div id="signupForm" class="form-container">
+        <h2>Sign Up</h2>
+        <form id="signup">
+        <label for="signupEmail">Email:</label>
+        <input type="email" id="signupEmail" name="email" required />
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" name="password" required />
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required />
+        <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" onclick="toggleForms()">Login</a></p>
+    
+    </div>
+  </div>
 
     <!-- Services Section -->
     <div class="services">
